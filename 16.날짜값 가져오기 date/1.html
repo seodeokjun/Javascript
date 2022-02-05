@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        const NOW_DATE = new Date()
+        const NOW_YEARS = NOW_DATE.getFullYear()
+        const NOW_MONTH = NOW_DATE.getMonth() + 1
+        document.write(NOW_DATE + "<br>")
+        document.write(NOW_YEARS + "<br>")
+        document.write(NOW_MONTH + "<br>")
+        document.write(NOW_DATE.getDate() + "<br>")
+        document.write(NOW_DATE.getDay())
+        var nowday = ""
+        switch (NOW_DATE.getDay()) {
+            case 0:
+                nowday = "일요일"
+                break;
+            
+                case 1
+                    nowday = "월요일"
+            default:
+                nowday = "알수없는요일"
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
