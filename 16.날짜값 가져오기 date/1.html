@@ -19,13 +19,38 @@
             case 0:
                 nowday = "일요일"
                 break;
+                
+            case 1:
+                nowday = "월요일"
+                break;
+
+            case 2:
+                nowday = "화요일"
+                break;
+
+            case 3:
+                nowday = "수요일"
+                break;
+
+            case 4:
+                nowday = "목요일"
+                break;
+
+            case 5:
+                nowday = "금요일"
+                break;
             
-                case 1
-                    nowday = "월요일"
+            case 6:
+                nowday = "토요일"
+                break;
+            
             default:
                 nowday = "알수없는요일"
                 break;
         }
+        document.write("오늘은 " + nowday + "<br")
+        document.write(NOW_DATE.getHours())
+        
     </script>
 </head>
 <body>
