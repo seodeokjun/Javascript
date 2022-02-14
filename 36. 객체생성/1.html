@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function makeCar(){
+            this.name
+            this.company
+            this.color
+            this.numPeople
+            this.meth = showCar
+        }
+        function showCar(){
+            document.write("자동차 이름 : " + this.name + "<br>")
+            document.write("자동차 제조사 : " + this.company + "<br>")
+            document.write("자동차 탑승인원 : " + this.numPeople + "<br>")
+            document.write("차량 색상 : " + this.color + "<br>")
+        }
+        r8 = new makeCar()
+        r8.name = "R8"
+        r8.company = "AUDI"
+        r8.color = "white"
+        r8.numPeople = 2
+        r8.meth()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
