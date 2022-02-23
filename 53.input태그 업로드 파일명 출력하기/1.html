@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            target = document.getElementById("myFile")
+            target.addEventListener("change", function(){
+                fileList = ""
+                for(i = 0; i < target.files.length; i++){
+                    console.log(target.files[i].name);
+                    fileList += target.files[i].name + "<br>"
+                }
+                target2 = document.getElementById("showFiles")
+                console.log(target2);
+                console.log(fileList);
+                target2.innerHTML = fileList    
+            })
+        }
+    </script>
+</head>
+<body>
+    <form action="이 데이터들을 받을 파일" name="이 폼의 이름" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="" id="myFile" multiple>
+    </form>
+    <div id="showFiles"></div>
+</body>
+</html>

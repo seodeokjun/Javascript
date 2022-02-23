@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            console.log("checkedBox is " + document.getElementById("checked").checked)
+            console.log("uncheckedBox is " + document.getElementById("unchecked").checked)
+        }
+    </script>
+</head>
+<body>
+    <label for="checked">checked</label>
+    <input type="radio" id="checked" checked>
+    <label for="unchecked">unchecked</label>
+    <input type="radio" id="unchecked">
+</body>
+</html>
